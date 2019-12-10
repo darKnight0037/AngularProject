@@ -1,0 +1,129 @@
+<div class="row">
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <i mat-card-avatar class="fa fa-mobile accent-color fa-2x"></i>
+                <mat-card-title>Responsive</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet distinctio mollitia pariatur sed.</p>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <i mat-card-avatar class="fa fa-tablet-alt accent-color fa-2x"></i>
+                <mat-card-title>Web</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet distinctio mollitia pariatur sed.</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-12 col-md-4">
+        <mat-card class="skill-block">
+            <mat-card-header>
+                <i mat-card-avatar class="fa fa-desktop accent-color fa-2x"></i>
+                <mat-card-title>Design</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet distinctio mollitia pariatur sed.</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+<mat-divider class="my-3"></mat-divider>
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-8">
+        <h3>About me</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ratione, perferendis nihil ducimus commodi unde
+            perspiciatis adipisci totam esse praesentium eius nisi molestias deleniti sint officiis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sapiente corrupti quo laboriosam.</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="mb-3">
+            <strong>HTML5 & CSS3</strong>
+            <span class="float-right">100%</span>
+            <mat-progress-bar value="100" color="accent"></mat-progress-bar>
+        </div>
+        <div class="mb-3">
+            <strong>Angular 8</strong>
+            <span class="float-right">80%</span>
+            <mat-progress-bar value="80" color="accent"></mat-progress-bar>
+        </div>
+        <div class="mb-3">
+            <strong>Bootstrap</strong>
+            <span class="float-right">20%</span>
+            <mat-progress-bar value="20" color="warn"></mat-progress-bar>
+        </div>
+    </div>
+</div>
+<!-- div*3>div.row>div.col-3+div.col-9>h2+p>lorem26^p>lorem21^button -->
+<div class="row mt-5">
+    <div class="col-3 text-center">
+        <i class="fab fa-angular fa-10x angular-color d-none d-md-block"></i>
+    </div>
+    <div class="col-12 col-md-9">
+        <h2>
+            <i class="fab fa-angular angular-color d-md-none mr-2"></i>
+            Angular Development
+        </h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora alias eligendi minus enim ratione similique assumenda
+            reiciendis atque praesentium ducimus, impedit perferendis quam, nihil, sed temporibus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aperiam beatae ipsa. Amet maiores, asperiores totam
+            beatae est odit veritatis repellat.</p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'Angular'}" mat-stroked-button> View More</button>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12 col-md-9 text-right">
+        <h2>React Development
+            <i class="fab fa-react react-color d-md-none ml-2"></i>
+        </h2>
+        <p>Doloremque eveniet autem, labore blanditiis dolore aliquam nobis repellat nulla in alias accusantium praesentium
+            impedit numquam voluptate minima unde ab recusandae explicabo quo eaque cumque reprehenderit?</p>
+        <p>Eligendi molestias facilis esse expedita ipsam nihil vero exercitationem amet voluptates. Mollitia repellendus eum
+            ea accusamus, fuga perferendis non tempora iste?</p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'React'}" mat-stroked-button> View More</button>
+    </div>
+    <div class="col-3 text-center">
+        <i class="fab fa-react fa-10x react-color d-none d-md-block"></i>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-3 text-center">
+        <i class="fab fa-vuejs fa-10x vue-color d-none d-md-block"></i>
+    </div>
+    <div class="col-12 col-md-9">
+        <h2>
+            <i class="fab fa-vuejs vue-color d-md-none mr-2"></i> Vue Development</h2>
+        <p>Nisi distinctio consectetur explicabo ratione laboriosam recusandae architecto mollitia sapiente quisquam tempore
+            fugiat quae cumque perspiciatis tenetur voluptate commodi, aspernatur esse cum nostrum quis, laborum optio?</p>
+        <p>Dolores nostrum dolore, quisquam voluptate tenetur reiciendis hic, libero doloribus, fugit illum iusto temporibus
+            repellat commodi quia quo facilis? Obcaecati, cupiditate?</p>
+        <button [routerLink]="['/portfolio']" [queryParams]="{filter:'Vue'}" mat-stroked-button> View More</button>
+    </div>
+</div>
+
+
+<div class="portfolio-preview">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <h2>Recent Apps</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque, in recusandae reiciendis, saepe nulla
+                accusantium, facilis ipsa numquam atque quis?</p>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div *ngFor="let item of recentProjects;index as i" [ngClass]="{'col-12 col-sm-4 col-md-4':i<3,'col-12 col-sm-6 col-md-3':i>=3}">
+            <img class="img-fluid" [src]="item.preview +'?text='+item.name" [alt]="item.name">
+        </div>
+        <div class="col-12 mt-3">
+            <button [routerLink]="['/portfolio']" mat-stroked-button> View More</button>
+        </div>
+    </div>
+</div>
